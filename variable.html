@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variablet</title>
+    <style>
+        :root{
+            --primary-color:tomato;
+            --secondary-color:blue;
+            --font-size:50px;
+            
+        }
+        h1 {
+            color: var(--primary-color);
+
+        }
+
+        h5 {
+            background-color: var(--primary-color);
+        }
+
+        .box {
+            border: 2px solid var(--primary-color);
+            width: calc(100% - 400px);
+
+        }
+
+        .box p {
+            color: var(--primary-color);
+            font-size: var( --font-size);
+        }
+        .sidebar{
+            background-color: bisque;
+        }
+        .content{
+            background-color: skyblue;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-rows:500px ;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My customer properties</h1>
+    <h5>also commonly know variables </h5>
+    <div class="box">
+        <h3>i am ring something</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto error tempora quam laborum et.
+            Asperiores praesentium porro libero suscipit voluptates a enim! Ipsam ratione culpa iure.
+            Harum odio facilis voluptatum?</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">sidebar</div>
+        <div class="content">Main content</div>
+    </div>
+</body>
+
+</html>
